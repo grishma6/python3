@@ -39,8 +39,8 @@ while command != "quit" and command == "QUIT":
     print("ECHO", command)
 
 # Infinite Loops
-while command == True:
-    command.lower() != "quit"
-    input(command)
-    print(command)
-    break
+while True:
+    command = input(">")
+    print("ECHO", command)
+    if command.lower() == "quit":
+        break
